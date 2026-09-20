@@ -1,451 +1,109 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAJ ONE FOR GENERAL TRADING | Energy Commodities</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'taj-gold': '#D4AF37',
-                        'taj-gold-light': '#F4E5A1',
-                        'taj-dark': '#0A0E1A',
-                        'taj-blue': '#0F1729',
-                        'taj-navy': '#1A2332'
-                    },
-                    fontFamily: { 
-                        'cairo': ['Cairo', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { font-family: 'Cairo', 'Inter', sans-serif; background: #0A0E1A; }
-        [lang="en"], [lang="de"] { font-family: 'Inter', 'Cairo', sans-serif; }
-        .gradient-gold {
-            background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .glass-effect {
-            background: rgba(15, 23, 41, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-        .lang-hidden { display: none; }
-        .gold-divider {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAJ ONE & ZAD FOR GENERAL TRADING LLC | Oman | 25+ Years Direct Supplier</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+body{font-family:'Inter','Cairo',sans-serif;background:#070b18;color:#fff;transition:all 0.3s}
+.ar{font-family:'Cairo',sans-serif}
+.gradient-gold{background:linear-gradient(135deg,#D4AF37 0%,#F4E5A1 50%,#D4AF37 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.glass{background:rgba(15,23,41,0.9);border:1px solid rgba(212,175,55,0.22)}
+.lang-hidden{display:none !important}
+.lang-btn{padding:9px 20px;border-radius:30px;font-size:13px;font-weight:900;cursor:pointer;border:2px solid rgba(212,175,55,0.4);background:transparent;color:#D4AF37;transition:0.3s}
+.lang-btn.active{background:#D4AF37;color:#000;border-color:#D4AF37;box-shadow:0 0 15px rgba(212,175,55,0.4)}
+.lang-btn:hover{background:rgba(212,175,55,0.15)}
+</style>
 </head>
-<body class="text-white">
+<body>
+<!-- TOP BAR WITH LANG SWITCH -->
+<div style="position:sticky;top:0;z-index:9999;background:#0a0e1a;border-bottom:2px solid #D4AF37;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+<div style="display:flex;align-items:center;gap:10px">
+<div style="width:50px;height:50px;background:#D4AF37;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:900;color:#000;font-size:24px">T</div>
+<span style="font-weight:900;font-size:15px">TAJ ONE & ZAD</span>
+<span style="color:#D4AF37;font-size:11px;margin-left:8px">OMAN | 25+ YEARS | DIRECT</span>
+</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button onclick="switchLang('en')" id="btn-en" class="lang-btn active">🇺🇸 ENGLISH</button>
+<button onclick="switchLang('ar')" id="btn-ar" class="lang-btn">🇸🇦 العربية</button>
+<button onclick="switchLang('de')" id="btn-de" class="lang-btn">🇩🇪 DEUTSCH</button>
+<button onclick="switchLang('tr')" id="btn-tr" class="lang-btn">🇹🇷 TÜRKÇE</button>
+</div>
+</div>
 
-    <!-- Language Switcher -->
-    <div class="bg-taj-navy py-2 px-6 border-b border-taj-gold/20">
-        <div class="container mx-auto flex justify-end gap-3">
-            <button onclick="switchLang('ar')" class="text-sm px-4 py-1 rounded-full bg-taj-gold text-taj-dark font-bold">العربية</button>
-            <button onclick="switchLang('en')" class="text-sm px-4 py-1 rounded-full glass-effect hover:bg-taj-gold/20">English</button>
-            <button onclick="switchLang('de')" class="text-sm px-4 py-1 rounded-full glass-effect hover:bg-taj-gold/20">Deutsch</button>
-        </div>
-    </div>
+<!-- HERO EN -->
+<div id="hero-en">
+<header style="text-align:center;padding:50px 5% 30px;background:radial-gradient(circle at center,#111a33 0%,#070b18 70%)">
+<h1 style="font-size:42px;font-weight:900;line-height:1.1"><span class="gradient-gold">TAJ ONE & ZAD</span><br>FOR GENERAL TRADING LLC</h1>
+<p style="margin-top:15px;color:#D4AF37;font-weight:700">Sultanate of Oman | 25+ Years Experience | Direct Supplier - No Middlemen</p>
+<p style="margin-top:10px;color:#8892a8">Brent, Gasoil, Bitumen, Jet Fuel, LPG | Bulk Supplies | Sohar Port</p>
+</header>
+</div>
 
-    <!-- Header شركة -->
-    <header class="bg-gradient-to-r from-taj-dark via-taj-blue to-taj-dark py-10 border-b-2 border-taj-gold/30">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-7xl font-black gradient-gold mb-4">TAJ ONE</h1>
-            <p data-lang="ar" class="text-xl text-taj-gold/90 font-bold">للتجارة العامة | حلول الطاقة العالمية</p>
-            <p data-lang="en" class="text-xl text-taj-gold/90 font-bold lang-hidden">FOR GENERAL TRADING | Global Energy Solutions</p>
-            <p data-lang="de" class="text-xl text-taj-gold/90 font-bold lang-hidden">FÜR ALLGEMEINEN HANDEL | Globale Energielösungen</p>
-            <p class="text-gray-400 mt-3">
-                <span data-lang="ar">مقرنا: أربيل، العراق | نخدم منطقة EMEA</span>
-                <span data-lang="en" class="lang-hidden">HQ: Erbil, Iraq | Serving EMEA Region</span>
-                <span data-lang="de" class="lang-hidden">Hauptsitz: Erbil, Irak | EMEA-Region</span>
-            </p>
-        </div>
-    </header>
+<!-- HERO AR -->
+<div id="hero-ar" class="lang-hidden ar" style="text-align:center;padding:50px 5% 30px;background:radial-gradient(circle at center,#111a33 0%,#070b18 70%)">
+<h1 style="font-size:42px;font-weight:900">تاج ون وزاد للتجارة العامة</h1>
+<p style="margin-top:15px;color:#D4AF37;font-weight:700">سلطنة عمان | خبرة 25+ سنة | مورد مباشر - بدون وسطاء</p>
+<p style="margin-top:10px;color:#8892a8">نفط خام، غاز، بيتومين، وقود طائرات | توريد بالجملة | ميناء صحار</p>
+</div>
 
-    <!-- نبذة عن الشركة -->
-    <section class="py-16 px-6">
-        <div class="container mx-auto max-w-5xl">
-            <div class="glass-effect p-10 rounded-3xl">
-                <h2 class="text-3xl font-bold mb-6 text-center">
-                    <span data-lang="ar" class="gradient-gold">من نحن</span>
-                    <span data-lang="en" class="gradient-gold lang-hidden">About Us</span>
-                    <span data-lang="de" class="gradient-gold lang-hidden">Über Uns</span>
-                </h2>
-                <div class="gold-divider mb-8"></div>
-                <p data-lang="ar" class="text-lg text-gray-300 leading-relaxed text-center">
-                    شركة <span class="text-taj-gold font-bold">TAJ ONE</span> رائدة في تجارة المشتقات النفطية والطاقة. نوفر حلول توريد بالجملة للنفط الخام، الديزل، البنزين، والكيروسين بتسليم <span class="text-taj-gold font-bold">CIF لجميع الموانئ العالمية</span>. نعمل كوسيط مباشر مع المصافي والموردين المعتمدين في الشرق الأوسط وأوروبا وآسيا، مع توفير التمويل التجاري DLC/SBLC.
-                </p>
-                <p data-lang="en" class="text-lg text-gray-300 leading-relaxed text-center lang-hidden">
-                    <span class="text-taj-gold font-bold">TAJ ONE</span> is a leading company in energy commodities trading. We provide bulk supply solutions for Crude Oil, Diesel, Gasoline, and Kerosene with <span class="text-taj-gold font-bold">CIF delivery to all global ports</span>. We operate as direct intermediaries with certified refineries and suppliers across Middle East, Europe, and Asia, offering DLC/SBLC trade finance.
-                </p>
-                <p data-lang="de" class="text-lg text-gray-300 leading-relaxed text-center lang-hidden">
-                    <span class="text-taj-gold font-bold">TAJ ONE</span> ist ein führendes Unternehmen im Energiehandel. Wir bieten Großhandelslösungen für Rohöl, Diesel, Benzin und Kerosin mit <span class="text-taj-gold font-bold">CIF-Lieferung an alle globalen Häfen</span>. Wir agieren als direkte Vermittler mit zertifizierten Raffinerien und Lieferanten im Nahen Osten, Europa und Asien mit DLC/SBLC-Handelsfinanzierung.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- HERO DE -->
+<div id="hero-de" class="lang-hidden" style="text-align:center;padding:50px 5% 30px;background:radial-gradient(circle at center,#111a33 0%,#070b18 70%)">
+<h1 style="font-size:42px;font-weight:900"><span class="gradient-gold">TAJ ONE & ZAD</span><br>GENERAL TRADING LLC</h1>
+<p style="margin-top:15px;color:#D4AF37;font-weight:700">Sultanat Oman | 25+ Jahre Erfahrung | Direktlieferant - Keine Zwischenhändler</p>
+</div>
 
-    <!-- بورصة النفط والأسعار -->
-    <section class="py-16 px-6 bg-taj-blue/20">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-black mb-4">
-                    <span data-lang="ar" class="gradient-gold">بورصة TAJ ONE المباشرة</span>
-                    <span data-lang="en" class="gradient-gold lang-hidden">TAJ ONE Live Exchange</span>
-                    <span data-lang="de" class="gradient-gold lang-hidden">TAJ ONE Live-Börse</span>
-                </h2>
-                <p data-lang="ar" class="text-gray-400 text-lg">أسعار السوق العالمية المباشرة</p>
-                <p data-lang="en" class="text-gray-400 text-lg lang-hidden">Live Global Market Prices</p>
-                <p data-lang="de" class="text-gray-400 text-lg lang-hidden">Live Globale Marktpreise</p>
-                <div class="w-40 h-1 bg-gradient-to-r from-transparent via-taj-gold to-transparent mx-auto mt-6"></div>
-            </div>
+<!-- HERO TR -->
+<div id="hero-tr" class="lang-hidden" style="text-align:center;padding:50px 5% 30px;background:radial-gradient(circle at center,#111a33 0%,#070b18 70%)">
+<h1 style="font-size:42px;font-weight:900"><span class="gradient-gold">TAJ ONE & ZAD</span><br>GENEL TİCARET LLC</h1>
+<p style="margin-top:15px;color:#D4AF37;font-weight:700">Umman Sultanlığı | 25+ Yıl Tecrübe | Doğrudan Tedarikçi</p>
+</div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-oil-well text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">BRENT</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">خام برنت</span>
-                        <span data-lang="en" class="lang-hidden">Brent Crude</span>
-                        <span data-lang="de" class="lang-hidden">Brent-Rohöl</span>
-                    </p>
-                    <p id="brent-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/Barrel</p>
-                </div>
+<!-- LIVE BORSA -->
+<div style="background:#0a0e1a;border-top:1px solid #D4AF37;border-bottom:1px solid #D4AF37;padding:12px 5%;display:flex;gap:25px;overflow-x:auto">
+<span style="color:#D4AF37;font-weight:900">LIVE BORSA:</span>
+<span>Brent: $84.32 <span style="color:#00ff88">▲1.2%</span></span>
+<span>Gasoil: $762 <span style="color:#00ff88">▲0.8%</span></span>
+<span>Bitumen: $485 <span style="color:#ff4444">▼0.3%</span></span>
+</div>
 
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-gas-pump text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">WTI</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">خام غرب تكساس</span>
-                        <span data-lang="en" class="lang-hidden">WTI Crude</span>
-                        <span data-lang="de" class="lang-hidden">WTI-Rohöl</span>
-                    </p>
-                    <p id="wti-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/Barrel</p>
-                </div>
+<!-- ABOUT -->
+<div style="padding:40px 5%">
+<div id="about-en"><h2 style="font-size:28px;font-weight:900;color:#D4AF37">Who We Are</h2><p style="margin-top:12px;color:#8892a8;line-height:1.6">TAJ ONE & ZAD LLC based in Sohar, Oman. 25+ years direct supplier of petroleum products. No brokers, direct from source. Licensed, verified, bulk quantities.</p></div>
+<div id="about-ar" class="lang-hidden ar"><h2 style="font-size:28px;font-weight:900;color:#D4AF37">من نحن</h2><p style="margin-top:12px;color:#8892a8">شركة تاج ون وزاد في صحار، عمان. خبرة 25 سنة مورد مباشر للمنتجات النفطية. بدون وسطاء، مباشر من المصدر.</p></div>
+<div id="about-de" class="lang-hidden"><h2 style="font-size:28px;font-weight:900;color:#D4AF37">Über Uns</h2><p style="margin-top:12px;color:#8892a8">TAJ ONE & ZAD LLC in Sohar, Oman. 25+ Jahre direkter Lieferant von Erdölprodukten.</p></div>
+<div id="about-tr" class="lang-hidden"><h2 style="font-size:28px;font-weight:900;color:#D4AF37">Hakkımızda</h2><p style="margin-top:12px;color:#8892a8">TAJ ONE & ZAD LLC, Sohar, Umman merkezli. 25+ yıldır doğrudan petrol ürünleri tedarikçisi.</p></div>
+</div>
 
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-truck text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">DIESEL</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">الديزل</span>
-                        <span data-lang="en" class="lang-hidden">Diesel</span>
-                        <span data-lang="de" class="lang-hidden">Diesel</span>
-                    </p>
-                    <p id="diesel-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/MT</p>
-                </div>
-
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-car text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">GASOLINE</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">البنزين</span>
-                        <span data-lang="en" class="lang-hidden">Gasoline</span>
-                        <span data-lang="de" class="lang-hidden">Benzin</span>
-                    </p>
-                    <p id="gasoline-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/Gallon</p>
-                </div>
-
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-fire-flame-curved text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">NAT GAS</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">الغاز الطبيعي</span>
-                        <span data-lang="en" class="lang-hidden">Natural Gas</span>
-                        <span data-lang="de" class="lang-hidden">Erdgas</span>
-                    </p>
-                    <p id="natgas-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/MMBtu</p>
-                </div>
-
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-coins text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">XAU</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">الذهب</span>
-                        <span data-lang="en" class="lang-hidden">Gold</span>
-                        <span data-lang="de" class="lang-hidden">Gold</span>
-                    </p>
-                    <p id="gold-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/Ounce</p>
-                </div>
-
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-ring text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">XAG</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">الفضة</span>
-                        <span data-lang="en" class="lang-hidden">Silver</span>
-                        <span data-lang="de" class="lang-hidden">Silber</span>
-                    </p>
-                    <p id="silver-price" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">USD/Ounce</p>
-                </div>
-
-                <div class="glass-effect p-6 rounded-2xl hover:scale-105 transition-all">
-                    <div class="flex items-center justify-between mb-4">
-                        <i class="fa-solid fa-dollar-sign text-3xl text-taj-gold"></i>
-                        <span class="text-xs bg-taj-gold/20 text-taj-gold px-3 py-1 rounded-full">USD/IQD</span>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-1">
-                        <span data-lang="ar">الدولار</span>
-                        <span data-lang="en" class="lang-hidden">US Dollar</span>
-                        <span data-lang="de" class="lang-hidden">US-Dollar</span>
-                    </p>
-                    <p id="usd-iqd" class="text-3xl font-bold text-white">
-                        <i class="fa-solid fa-spinner fa-spin text-taj-gold"></i>
-                    </p>
-                    <p class="text-xs text-gray-500 mt-2">
-                        <span data-lang="ar">دينار عراقي</span>
-                        <span data-lang="en" class="lang-hidden">Iraqi Dinar</span>
-                        <span data-lang="de" class="lang-hidden">Irakischer Dinar</span>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="text-center mt-10">
-                <div class="glass-effect inline-block px-8 py-4 rounded-full">
-                    <p class="text-gray-300 text-sm">
-                        <i class="fa-solid fa-clock text-taj-gold"></i>
-                        <span data-lang="ar">آخر تحديث:</span>
-                        <span data-lang="en" class="lang-hidden">Last Update:</span>
-                        <span data-lang="de" class="lang-hidden">Letzte Aktualisierung:</span>
-                        <span id="last-update" class="text-taj-gold font-bold">--</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- خدمات البيع والتوصيل CIF -->
-    <section class="py-16 px-6">
-        <div class="container mx-auto max-w-6xl">
-            <div class="glass-effect p-10 rounded-3xl">
-                <h2 class="text-3xl font-bold mb-8 text-center">
-                    <span data-lang="ar" class="gradient-gold">احصل على سعر للنفط - توصيل CIF</span>
-                    <span data-lang="en" class="gradient-gold lang-hidden">Get Oil Price Quote - CIF Delivery</span>
-                    <span data-lang="de" class="gradient-gold lang-hidden">Ölpreisangebot - CIF-Lieferung</span>
-                </h2>
-                <div class="gold-divider mb-8"></div>
-                
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-taj-gold mb-4">
-                            <i class="fa-solid fa-ship"></i>
-                            <span data-lang="ar">خدمات التوريد</span>
-                            <span data-lang="en" class="lang-hidden">Supply Services</span>
-                            <span data-lang="de" class="lang-hidden">Lieferdienste</span>
-                        </h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> نفط خام خفيف وثقيل</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Light & Heavy Crude Oil</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Leichtes & Schweres Rohöl</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> ديزل EN590 10ppm</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Diesel EN590 10ppm</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Diesel EN590 10ppm</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> بنزين 95/98 أوكتان</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Gasoline 95/98 Octane</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Benzin 95/98 Oktan</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> كيروسين وقود طائرات Jet A1</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Jet A1 Kerosene</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Jet A1 Kerosin</li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-2xl font-bold text-taj-gold mb-4">
-                            <i class="fa-solid fa-file-contract"></i>
-                            <span data-lang="ar">شروط التجارة</span>
-                            <span data-lang="en" class="lang-hidden">Trade Terms</span>
-                            <span data-lang="de" class="lang-hidden">Handelsbedingungen</span>
-                        </h3>
-                        <ul class="space-y-3 text-gray-300">
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> تسليم CIF جميع الموانئ</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> CIF Delivery All Ports</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> CIF-Lieferung alle Häfen</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> تمويل DLC/SBLC</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> DLC/SBLC Financing</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> DLC/SBLC-Finanzierung</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> كميات: 50,000 - 2,000,000 برميل</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Quantities: 50,000 - 2,000,000 Barrels</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Mengen: 50.000 - 2.000.000 Barrel</li>
-                            
-                            <li data-lang="ar"><i class="fa-solid fa-check text-taj-gold"></i> عقود شهرية/سنوية</li>
-                            <li data-lang="en" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Monthly/Annual Contracts</li>
-                            <li data-lang="de" class="lang-hidden"><i class="fa-solid fa-check text-taj-gold"></i> Monatliche/Jährliche Verträge</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="text-center mt-10">
-                    <a href="mailto:salahcyber2026@gmail.com" class="inline-block bg-taj-gold text-taj-dark px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all">
-                        <span data-lang="ar">اطلب عرض سعر الآن</span>
-                        <span data-lang="en" class="lang-hidden">Request Quote Now</span>
-                        <span data-lang="de" class="lang-hidden">Angebot Anfordern</span>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-taj-dark py-12 border-t-2 border-taj-gold/30">
-        <div class="container mx-auto px-6 text-center">
-            <h4 class="text-3xl font-black gradient-gold mb-6">TAJ ONE FOR GENERAL TRADING</h4>
-            <p class="text-gray-400 mb-6">
-                <span data-lang="ar">شريكك الموثوق في تجارة الطاقة العالمية</span>
-                <span data-lang="en" class="lang-hidden">Your Trusted Partner in Global Energy Trading</span>
-                <span data-lang="de" class="lang-hidden">Ihr vertrauenswürdiger Partner im globalen Energiehandel</span>
-            </p>
-            <div class="flex flex-wrap justify-center gap-6 text-taj-gold/80 mb-6">
-                <span><i class="fa-solid fa-location-dot"></i> Erbil, Iraq</span>
-                <span><i class="fa-solid fa-envelope"></i> salahcyber2026@gmail.com</span>
-                <span><i class="fa-solid fa-phone"></i> +9647501700795</span>
-            </div>
-            <p class="text-gray-600 text-xs">© 2026 TAJ ONE. All Rights Reserved</p>
-        </div>
-    </footer>
+<!-- CONTACT -->
+<div style="padding:30px 5%;background:#111a33;text-align:center">
+<p style="font-weight:900;color:#D4AF37">Contact: tiktokworld2026@gmail.com | Sohar, Oman</p>
+<p style="margin-top:8px;font-size:13px;color:#8892a8">bit.ly/TajoneEnergy - Official Website</p>
+</div>
 
 <script>
-// تبديل اللغات
-function switchLang(lang) {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.querySelectorAll('[data-lang]').forEach(el => {
-        if (el.getAttribute('data-lang') === lang) {
-            el.classList.remove('lang-hidden');
-        } else {
-            el.classList.add('lang-hidden');
-        }
-    });
+function switchLang(lang){
+  // hide all
+  document.querySelectorAll('[id^="hero-"]').forEach(el=>el.classList.add('lang-hidden'));
+  document.querySelectorAll('[id^="about-"]').forEach(el=>el.classList.add('lang-hidden'));
+  // show selected
+  document.getElementById('hero-'+lang).classList.remove('lang-hidden');
+  document.getElementById('about-'+lang).classList.remove('lang-hidden');
+  // buttons
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+lang).classList.add('active');
+  // dir
+  if(lang==='ar'){document.documentElement.dir='rtl';document.body.classList.add('ar');}else{document.documentElement.dir='ltr';document.body.classList.remove('ar');}
+  document.documentElement.lang=lang;
+  localStorage.setItem('taj-lang',lang);
 }
-
-// أسعار احتياطية حقيقية 2026
-const FALLBACK = {
-    brent: 82.45,
-    wti: 78.30,
-    diesel: 850.00,
-    gasoline: 2.65,
-    natgas: 2.85,
-    gold: 2025.30,
-    silver: 24.50,
-    usd_iqd: 1310
-};
-
-// تحديث الأسعار - كل ساعتين = 7200000ms
-async function updatePrices() {
-    const setPrice = (id, value, suffix = ' $') => {
-        document.getElementById(id).innerHTML = value.toFixed(2) + suffix;
-    };
-
-    // 1. النفط من CoinGecko
-    try {
-        const oilRes = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=wti-crude-oil&vs_currencies=usd');
-        const oilData = await oilRes.json();
-        const wti = oilData['wti-crude-oil']?.usd || FALLBACK.wti;
-        setPrice('wti-price', wti);
-        setPrice('brent-price', wti + 4.15);
-    } catch(e) {
-        setPrice('brent-price', FALLBACK.brent);
-        setPrice('wti-price', FALLBACK.wti);
-    }
-
-    // 2. الذهب والفضة
-    try {
-        const metalsRes = await fetch('https://api.metals.live/v1/spot');
-        const metalsData = await metalsRes.json();
-        const gold = metalsData.find(m => m.metal === 'gold')?.price || FALLBACK.gold;
-        const silver = metalsData.find(m => m.metal === 'silver')?.price || FALLBACK.silver;
-        setPrice('gold-price', gold);
-        setPrice('silver-price', silver);
-    } catch(e) {
-        setPrice('gold-price', FALLBACK.gold);
-        setPrice('silver-price', FALLBACK.silver);
-    }
-
-    // 3. الدولار/دينار
-    try {
-        const fxRes = await fetch('https://api.exchangerate.host/latest?base=USD&symbols=IQD');
-        const fxData = await fxRes.json();
-        const iqd = fxData.rates?.IQD || FALLBACK.usd_iqd;
-        document.getElementById('usd-iqd').innerHTML = Math.round(iqd).toLocaleString('ar-IQ') + ' د.ع';
-    } catch(e) {
-        document.getElementById('usd-iqd').innerHTML = FALLBACK.usd_iqd.toLocaleString('ar-IQ') + ' د.ع';
-    }
-
-    // 4. المشتقات - محسوبة من برنت
-    const brentVal = parseFloat(document.getElementById('brent-price').innerText) || FALLBACK.brent;
-    setPrice('diesel-price', brentVal * 10.3, ' $');
-    setPrice('gasoline-price', brentVal * 0.032, ' $');
-    setPrice('natgas-price', FALLBACK.natgas);
-
-    // وقت التحديث
-    const now = new Date();
-    const lang = document.documentElement.lang || 'ar';
-    document.getElementById('last-update').innerText = now.toLocaleString(lang === 'ar' ? 'ar-IQ' : lang === 'de' ? 'de-DE' : 'en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-    });
-}
-
-// تشغيل
-updatePrices();
-// كل ساعتين = 7200000ms - دائمي للأبد
-setInterval(updatePrices, 7200000);
+window.addEventListener('DOMContentLoaded',()=>{
+  const saved=localStorage.getItem('taj-lang')||'en';
+  switchLang(saved);
+});
 </script>
-
 </body>
 </html>
