@@ -1,34 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAJ ONE & ZAD</title>
+<title>TAJ ONE & ZAD FOR GENERAL TRADING AND ENERGY LLC</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-body{background:#070b18;color:#fff;margin:0;font-family:sans-serif}
-.video-box{border-radius:18px;overflow:hidden;border:2px solid #D4AF37;background:#000;margin-top:12px}
-.text-box{background:#111a2e;border-left:4px solid #D4AF37;border-radius:12px;padding:18px}
+body{font-family:Inter,Cairo,sans-serif;background:#070b18;color:#fff;margin:0}
+.lang-hidden{display:none!important}
+.lang-btn{padding:10px 18px;border-radius:30px;font-weight:900;font-size:11px;border:2px solid rgba(212,175,55,0.4);background:transparent;color:#D4AF37;cursor:pointer}
+.lang-btn.active{background:linear-gradient(135deg,#D4AF37,#F4E5A1);color:#000}
+.glass{background:rgba(17,26,46,0.88);border:1px solid rgba(212,175,55,0.22);border-radius:16px;padding:14px;text-align:center}
+.video-box{position:relative;border-radius:20px;overflow:hidden;border:2px solid rgba(212,175,55,0.4);box-shadow:0 0 30px rgba(212,175,55,0.2);width:100%}
+.text-box{background:#111a2e;border-left:4px solid #D4AF37;border-radius:14px;padding:24px;margin-top:16px}
+.pulse-dot{display:inline-block;width:8px;height:8px;background:#22c55e;border-radius:50%;animation:pulse 2s infinite;margin-left:6px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
 </style>
 </head>
 <body>
-<header style="text-align:center;padding:30px">
-<h1 style="color:#D4AF37;font-size:36px">TAJ ONE & ZAD</h1>
-<p>FOR GENERAL TRADING AND ENERGY LLC</p>
-<p style="color:#D4AF37;font-size:12px">📞 +9647716344443 | 📧 info@tajone-energy.com | 📧 salahenergy.ceo@gmail.com</p>
-</header>
-
-<section style="padding:20px 4%"><div style="max-width:800px;margin:auto">
-<div class="text-box">
-<h3 style="color:#D4AF37">Rooted in Energy - 25+ Years</h3>
-<p style="font-size:13px;line-height:2">TAJ ONE & ZAD FOR GENERAL TRADING AND ENERGY LLC - Oman Sohar - Within Legal Framework - Dedicated vessels - CIF any safe port worldwide.</p>
+<div style="position:sticky;top:0;z-index:9999;background:#0a0e1a;border-bottom:2px solid #D4AF37;padding:10px 4%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+<div style="display:flex;align-items:center;gap:10px"><div style="width:54px;height:54px;background:linear-gradient(135deg,#D4AF37,#F4E5A1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#000;font-weight:900">T</div><div><div style="font-weight:900">TAJ ONE & ZAD</div><div style="font-size:8px;color:#D4AF37;letter-spacing:1px">FOR GENERAL TRADING AND ENERGY LLC</div></div></div>
+<div style="display:flex;gap:5px"><button onclick="switchLang('en')" id="btn-en" class="lang-btn active">EN</button><button onclick="switchLang('ar')" id="btn-ar" class="lang-btn">AR</button><button onclick="switchLang('de')" id="btn-de" class="lang-btn">DE</button><button onclick="switchLang('tr')" id="btn-tr" class="lang-btn">TR</button></div>
 </div>
-<div class="video-box">
-<video autoplay muted loop playsinline controls style="width:100%;height:360px;object-fit:cover">
-<source src="video1.mp4" type="video/mp4">
-</video>
+<header style="text-align:center;padding:50px 5% 30px;background:radial-gradient(ellipse at center,#111a33 0%,#070b18 70%)">
+<h1 style="font-size:50px;font-weight:900;background:linear-gradient(135deg,#D4AF37,#F4E5A1,#D4AF37);-webkit-background-clip:text;-webkit-text-fill-color:transparent">TAJ ONE & ZAD</h1>
+<p style="letter-spacing:5px;font-weight:900">FOR GENERAL TRADING AND ENERGY LLC</p>
+<div class="lang-section" data-lang="en"><p style="color:#D4AF37;margin-top:12px;font-weight:700">25+ Years Excellence • Oman Sohar • CIF Any Safe Port • Within Legal Framework • Vessel Transport</p></div>
+<div class="lang-section lang-hidden" data-lang="ar"><p style="color:#D4AF37;margin-top:12px;font-weight:700">25+ عاماً تميز • عمان صحار • CIF أي ميناء آمن • ضمن الشروط القانونية • نقل بالبواخر</p></div><div class="lang-section lang-hidden" data-lang="de"><p style="color:#D4AF37;margin-top:12px;font-weight:700">25+ Jahre Exzellenz • Oman Sohar • CIF Jeder Sichere Hafen • Im Rechtsrahmen • Schifftransport</p></div><div class="lang-section lang-hidden" data-lang="tr"><p style="color:#D4AF37;margin-top:12px;font-weight:700">25+ Yıl Mükemmellik • Umman Sohar • CIF Her Güvenli Liman • Yasal Çerçeve İçinde • Gemi Taşımacılığı</p></div>
+<p style="margin-top:14px;color:#D4AF37;font-weight:900;font-size:12px">📞 +9647716344443 | 📧 info@tajone-energy.com | 📧 salahenergy.ceo@gmail.com</p>
+</header>
+<section style="padding:24px 4%;background:rgba(15,23,41,0.35)">
+<div style="max-width:1100px;margin:auto;text-align:center;margin-bottom:10px">
+<span style="color:#D4AF37;font-size:11px;font-weight:900"><span class="pulse-dot"></span> LIVE MARKET PRICES <span style="color:#6b7a99;font-weight:400" id="market-update-time">— Loading</span></span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;max-width:1100px;margin:auto">
+<div class="glass"><div style="color:#D4AF37;font-size:10px">BRENT</div><div style="font-weight:900" id="price-brent">$—</div></div>
+<div class="glass"><div style="color:#D4AF37;font-size:10px">WTI</div><div style="font-weight:900" id="price-wti">$—</div></div>
+<div class="glass"><div style="color:#D4AF37;font-size:10px">GOLD</div><div style="font-weight:900" id="price-gold">$—</div></div>
+<div class="glass"><div style="color:#D4AF37;font-size:10px">USD/IQD</div><div style="font-weight:900" id="price-iqd">— IQD</div></div>
+<div class="glass"><div style="color:#D4AF37;font-size:10px">EUR/USD</div><div style="font-weight:900" id="price-eur">$—</div></div>
+</div>
+</section>
+<section style="padding:30px 4%"><div style="max-width:1050px;margin:auto">
+<div class="video-box" style="width:100%;aspect-ratio:16/9">
+<video autoplay muted loop playsinline controls preload="auto" style="width:100%;height:100%;border-radius:20px;object-fit:cover;display:block;background:#000"><source src="https://macaron-sandbox-workspace.oss-accelerate.aliyuncs.com/prod/01a05af1-b26d-7362-b346-cf03de104a61/workspace/v1_comp.mp4" type="video/mp4"></video>
+</div>
+<div class="text-box">
+<div class="lang-section" data-lang="en"><span style="background:#D4AF37;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">UPSTREAM OPERATIONS</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Strategic Energy Logistics — Vessel Powered Transport</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">From <b>Oman Sohar Port</b> to any safe port worldwide, our dedicated vessels ensure secure, compliant, and timely CIF delivery. Every shipment is fully insured and tracked within international legal frameworks. <b style="color:#D4AF37">25+ years of excellence</b> in strategic energy transport. We value serious transparent partnerships built on mutual respect.</p></div>
+<div class="lang-section lang-hidden" data-lang="ar"><span style="background:#D4AF37;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">عمليات المنبع</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">لوجستيات استراتيجية للطاقة — نقل بالبواخر المخصصة</h3><p style="color:#cbd5e1;line-height:2.2;margin-top:10px;font-size:13px">من <b>ميناء صحار</b> إلى أي ميناء آمن حول العالم، بواخرنا المخصصة تضمن تسليم CIF آمن ومتوافق وفي الوقت المحدد. كل شحنة مؤمنة ومتابعة ضمن الأطر القانونية الدولية. <b style="color:#D4AF37">أكثر من 25 عاماً من التميز</b> في نقل الطاقة الاستراتيجي. نقدر الشراكات الجادة الشفافة المبنية على الاحترام المتبادل.</p></div><div class="lang-section lang-hidden" data-lang="de"><span style="background:#D4AF37;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">VORSCHICHTBETRIEBE</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Strategische Energielogistik — Schiffstransport</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Von <b>Oman Sohar Hafen</b> zu jedem sicheren Hafen weltweit gewährleisten unsere dedizierten Schiffe sichere, konforme und rechtzeitige CIF-Lieferung. Jede Sendung ist vollständig versichert und innerhalb internationaler Rechtsrahmen verfolgt. <b style="color:#D4AF37">25+ Jahre Exzellenz</b> im strategischen Energietransport. Wir schätzen ernsthafte transparente Partnerschaften auf gegenseitigem Respekt.</p></div><div class="lang-section lang-hidden" data-lang="tr"><span style="background:#D4AF37;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">ÜRETİM OPERASYONLARI</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Stratejik Enerji Lojistiği — Gemiyle Taşımacılık</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px"><b>Umman Sohar Limanı'ndan</b> dünyadaki her güvenli limana, özel gemilerimiz güvenli, uyumlu ve zamanında CIF teslimat sağlar. Her sevkiyat tamamen sigortalı ve uluslararası yasal çerçeveler içinde izlenir. Stratejik enerji taşımada <b style="color:#D4AF37">25+ yıl mükemmellik</b>. Karşılıklı saygıya dayanan ciddi şeffaf ortaklıklara değer veririz.</p></div>
 </div>
 </div></section>
-
+�<section style="padding:0 4% 30px"><div style="max-width:1050px;margin:auto">
+<div class="video-box" style="width:100%;aspect-ratio:16/9">
+<video autoplay muted loop playsinline controls preload="auto" style="width:100%;height:100%;border-radius:20px;object-fit:cover;display:block;background:#000"><source src="https://macaron-sandbox-workspace.oss-accelerate.aliyuncs.com/prod/01a05af1-b26d-7362-b346-cf03de104a61/workspace/v2_comp.mp4" type="video/mp4"></video>
+</div>
+<div class="text-box">
+<div class="lang-section" data-lang="en"><span style="background:#0ea5e9;color:#fff;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">PORT OPERATIONS</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Port Operations Excellence — Precision Loading and Dispatch</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Precision loading and dispatch from Sohar Port, one of the Middle East's strategic energy hubs. Our operations follow strict international standards, ensuring quality control from source to destination. <b style="color:#D4AF37">Every drop counts, every shipment matters.</b> We maintain diplomatic precision in every operation, respecting serious buyers and global compliance.</p></div>
+<div class="lang-section lang-hidden" data-lang="ar"><span style="background:#0ea5e9;color:#fff;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">عمليات الميناء</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">تميز العمليات المينائية — تحميل وإرسال دقيق</h3><p style="color:#cbd5e1;line-height:2.2;margin-top:10px;font-size:13px">تحميل وإرسال دقيق من ميناء صحار، أحد المراكز الاستراتيجية للطاقة في الشرق الأوسط. عملياتنا تتبع معايير دولية صارمة، لضمان مراقبة الجودة من المصدر إلى الوجهة. <b style="color:#D4AF37">كل قطرة مهمة، وكل شحنة لها قيمة.</b> نحافظ على دقة دبلوماسية في كل عملية، نحترم المشتترين الجادين والامتثال العالمي.</p></div><div class="lang-section lang-hidden" data-lang="de"><span style="background:#0ea5e9;color:#fff;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">HAFENBETRIEBE</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Hafenbetriebs-Exzellenz — Präzises Laden und Versand</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Präzises Laden und Versand vom Sohar Hafen, einem der strategischen Energiezentren des Nahen Ostens. Unsere Operationen folgen strengen internationalen Standards und gewährleisten Qualitätskontrolle von der Quelle bis zum Ziel. <b style="color:#D4AF37">Jeder Tropfen zählt, jede Sendung ist wichtig.</b> Wir wahren diplomatische Präzision in jeder Operation und respektieren ernsthafte Käufer und globale Compliance.</p></div><div class="lang-section lang-hidden" data-lang="tr"><span style="background:#0ea5e9;color:#fff;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">LİMAN OPERASYONLARI</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Liman Operasyon Mükemmelliği — Hassas Yükleme ve Sevkiyat</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Orta Doğu'nun stratejik enerji merkezlerinden Sohar Limanı'ndan hassas yükleme ve sevkiyat. Operasyonlarımız katı uluslararası standartları izler, kaynaktan hedefe kalite kontrolü sağlar. <b style="color:#D4AF37">Her damla önemli, her sevkiyat değerli.</b> Her operasyonda diplomatik hassasiyeti korur, ciddi alıcıları ve küresel uyumu saygıyla karşılarız.</p></div>
+</div>
+</div></section>
+<section style="padding:0 4% 30px"><div style="max-width:1050px;margin:auto">
+<div class="video-box" style="width:100%;aspect-ratio:16/9">
+<video autoplay muted loop playsinline controls preload="auto" style="width:100%;height:100%;border-radius:20px;object-fit:cover;display:block;background:#000"><source src="https://macaron-sandbox-workspace.oss-accelerate.aliyuncs.com/prod/01a05af1-b26d-7362-b346-cf03de104a61/workspace/v3_comp.mp4" type="video/mp4"></video>
+</div>
+<div class="text-box">
+<div class="lang-section" data-lang="en"><span style="background:#22c55e;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">ENERGY SUPPLY CHAIN</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Complete Energy Supply Chain — From Source to Market</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">From crude to refined products, TAJ ONE & ZAD manages the complete energy supply chain with diplomatic precision. We connect producers to markets through secure, transparent, and competitive channels. <b style="color:#D4AF37">Our reputation is built on trust, delivered through performance.</b> Every link in the chain is monitored, insured, and compliant with international regulations.</p></div>
+<div class="lang-section lang-hidden" data-lang="ar"><span style="background:#22c55e;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">سلسلة توريد الطاقة</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">سلسلة توريد الطاقة الكاملة — من المصدر إلى السوق</h3><p style="color:#cbd5e1;line-height:2.2;margin-top:10px;font-size:13px">من الخام إلى المنتجات المكررة، تاج ون زاد تدير سلسلة الطاقة الكاملة بدقة دبلوماسية. نربط المنتجين بالأسواق عبر قنوات آمنة وشفافة ومنافسة. <b style="color:#D4AF37">سمعتنا مبنية على الثقة، ونجاحنا يتحقق بالأداء.</b> كل حلقة في السلسلة مراقبة ومؤمنة ومتوافقة مع اللوائح الدولية.</p></div><div class="lang-section lang-hidden" data-lang="de"><span style="background:#22c55e;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">ENERGIEVERSORGUNGSKETTE</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Vollständige Energieversorgungskette — Von der Quelle zum Markt</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Von Rohöl bis zu raffinierten Produkten verwaltet TAJ ONE & ZAD die vollständige Energieversorgungskette mit diplomatischer Präzision. Wir verbinden Produzenten mit Märkten über sichere, transparente und wettbewerbsfähige Kanäle. <b style="color:#D4AF37">Unser Ruf basiert auf Vertrauen, geliefert durch Leistung.</b> Jedes Glied der Kette wird überwacht, versichert und entspricht internationalen Vorschriften.</p></div><div class="lang-section lang-hidden" data-lang="tr"><span style="background:#22c55e;color:#000;padding:4px 10px;border-radius:20px;font-weight:900;font-size:10px">ENERJİ TEDARİK ZİNCİRİ</span><h3 style="color:#D4AF37;font-weight:900;margin-top:12px">Tam Enerji Tedarik Zinciri — Kaynaktan Pazara</h3><p style="color:#cbd5e1;line-height:2;margin-top:10px;font-size:13px">Ham petrolden rafine ürünlere kadar TAJ ONE & ZAD, tam enerji tedarik zincirini diplomatik hassasiyetle yönetir. Üreticileri pazarlarla güvenli, şeffaf ve rekabetçi kanallar üzerinden bağlarız. <b style="color:#D4AF37">İtibarımız güvene dayanır, performansla teslim edilir.</b> Zincirin her halkası izlenir, sigortalanır ve uluslararası düzenlemelere uygundur.</p></div>
+</div>
+</div></section>
+<section style="padding:30px 4%;background:linear-gradient(135deg,#0f1729,#1a2332);border-top:2px solid #D4AF37;border-bottom:2px solid #D4AF37">
+<div style="max-width:1050px;margin:auto;text-align:center">
+<h2 style="color:#D4AF37;font-size:26px;font-weight:900"><i class="fa-solid fa-address-book"></i> CONTACT US</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px">
+<div class="glass" style="padding:18px"><div style="color:#D4AF37;font-size:11px">PHONE / WHATSAPP</div><div style="font-size:18px;font-weight:900;margin-top:6px"><a href="tel:+9647716344443" style="color:#fff;text-decoration:none">+964 771 634 4443</a></div><div style="font-size:10px;color:#8899bb;margin-top:4px">WhatsApp 24/7</div></div>
+<div class="glass" style="padding:18px"><div style="color:#D4AF37;font-size:11px">EMAIL - GENERAL</div><div style="font-size:14px;font-weight:900;margin-top:6px;word-break:break-all"><a href="mailto:info@tajone-energy.com" style="color:#fff;text-decoration:none">info@tajone-energy.com</a></div></div>
+<div class="glass" style="padding:18px"><div style="color:#D4AF37;font-size:11px">EMAIL - CEO DIRECT</div><div style="font-size:14px;font-weight:900;margin-top:6px;word-break:break-all"><a href="mailto:salahenergy.ceo@gmail.com" style="color:#fff;text-decoration:none">salahenergy.ceo@gmail.com</a></div></div>
+</div>
+<p style="margin-top:18px;color:#D4AF37;font-weight:700;font-size:11px">📍 Oman Sohar Port | CIF Any Safe Port Worldwide | Within Legal Framework | Vessel Transport | Competitive Pricing</p>
+</div>
+</section>
+<footer style="background:#050814;padding:20px;text-align:center;border-top:1px solid rgba(212,175,55,0.25)"><h4 style="color:#D4AF37;font-weight:900;font-size:12px">TAJ ONE & ZAD FOR GENERAL TRADING AND ENERGY LLC - Oman - Sohar Port</h4><p style="color:#6b7a99;font-size:10px;margin-top:8px">Within Legal Framework • CIF Any Safe Port • Vessel Transport</p></footer>
+<script>
+function switchLang(l){document.documentElement.lang=l;document.documentElement.dir=(l==='ar')?'rtl':'ltr';document.querySelectorAll('.lang-section').forEach(e=>{if(e.getAttribute('data-lang')===l)e.classList.remove('lang-hidden');else e.classList.add('lang-hidden');});document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.getElementById('btn-'+l).classList.add('active');}
+window.addEventListener('load',()=>switchLang('en'));
+function updatePrices(){
+fetch('https://biquote.io/api/UKOIL').then(r=>r.json()).then(d=>{const p=d.bid||d.ask||0;document.getElementById('price-brent').textContent='$'+p.toFixed(2);}).catch(()=>{});
+fetch('https://biquote.io/api/USOIL').then(r=>r.json()).then(d=>{const p=d.bid||d.ask||0;document.getElementById('price-wti').textContent='$'+p.toFixed(2);}).catch(()=>{});
+fetch('https://biquote.io/api/XAUUSD').then(r=>r.json()).then(d=>{const p=d.bid||d.ask||0;document.getElementById('price-gold').textContent='$'+p.toFixed(2);}).catch(()=>{});
+fetch('https://biquote.io/api/USDIQD').then(r=>r.json()).then(d=>{const p=d.bid||d.ask||0;document.getElementById('price-iqd').textContent=Math.round(p)+' IQD';}).catch(()=>{});
+fetch('https://biquote.io/api/EURUSD').then(r=>r.json()).then(d=>{const p=d.bid||d.ask||0;document.getElementById('price-eur').textContent='$'+p.toFixed(4);}).catch(()=>{});
+const now=new Date();const t=now.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})+' '+now.toLocaleDateString('en-GB',{day:'2-digit',month:'short'});document.getElementById('market-update-time').textContent='— Updated '+t;
+}
+updatePrices();
+setInterval(updatePrices,21600000);
+</script>
 </body>
 </html>
